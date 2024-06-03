@@ -1,33 +1,151 @@
-body,html{
-    margin: 0;padding: 0;
+body, html {
+  margin: 0;
+  padding: 0;
 }
-.interface{
-    height: 100vh;width: 100%;
+.interface {
+  height: 100vh;
+  width: 100%;
+  display: none;
+  
 }
-h1{font-size: 32px;}
-.nav{background-color: green;color: white;display: flex;justify-content: space-between;padding: 15px;}
-.nav-head{flex: 1;}
-.nav-head2{flex: 1;padding-right: 10px;}
-select{font-size: 20px;}
-i{font-size: 38px;color: white;right: 0px;display: inline-block;padding-top: 24px;}
-option{cursor: pointer;}
-
-
-
+.launching {
+  height: 100vh;
+  width: 100%;
+  
+}
+.p-launching {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+h1 {
+  font-size: 32px;
+}
+.nav {
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.head-nav, .head-nav2 {
+  flex: 1;
+}
+select {
+  font-size: 20px;
+}
+i {
+  font-size: 38px;
+  color: white;
+  display: inline-block;
+  padding-top: 24px;
+}
+option {
+  cursor: pointer;
+}
 .anta-regular {
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-  }
-
-  .round{display: flex;align-items: center;justify-content: center;border-radius: 50%;background-color: grey;width: 280px;margin: 0 auto;margin-top: 30px;height: 280px;}
-  .inner{border-radius: 50%;}
-  .anta-regular {
-    font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  .inputsection{background-color: gray;border-radius: 10px;height: auto;width: 300px;padding: 10px;margin: 0 auto;margin-top: 20px;box-shadow: 8px 15px 19px green;}
-  input{display: block;margin-top: 8px;font-size: 25px;width: 60%;}
-  form center>button{font-size: 28px;border-radius: 15px;margin-top: 10px;outline: none;border: none;margin-bottom: 5px;background-color: green;color: white;}
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+.round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: grey;
+  width: 220px;
+  height: 220px;
+  margin: 30px auto 0;
+}
+.inner {
+  border-radius: 50%;
+}
+.inputsection {
+  background-color: gray;
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: 8px 15px 19px green;
+}
+input {
+  display: block;
+  margin-top: 8px;
+  font-size: 22px;
+  width: 60%;
+}
+form center>button {
+  font-size: 28px;
+  border-radius: 15px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  margin-bottom: 5px;
+  background-color: green;
+  color: white;
+}
+#result {
+  background-color: green;
+  color: white;
+  width: 200px;
+  height: 34px;
+  margin: auto;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#result:hover {
+  background-color: lightgreen;
+  color: green;
+}
+h2 {
+  text-align: center;
+  color: green;
+}
+.report {
+  padding: 20px;
+  box-shadow: 5px 3px 7px green;
+  margin: auto;
+  display: none;
+}
+#resultbmi, #healthStatus {
+  text-align: center;
+  margin-top: 3px;
+}
+#healthStatus {
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#close {
+  background-color: red;
+  color: white;
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#close:hover {
+  background-color: rgb(29, 4, 4);
+  color: yellow;
+}
+#close {
+  transition: background-color 3s;
+}
+.sh-logo {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin: auto;
+}
+.lauching>p {
+  padding: 20px;
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}

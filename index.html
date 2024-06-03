@@ -1,53 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0de567c89b.js" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="interface">
-        <div class="nav">
-<div class="head-nav">
-    <h1>BMI cal.</h1>
-    <select name="" id="">
-        <option value="">English</option>
-        <option value="">Luganda</option>
-        <option value="">Kiswahili</option>
-    </select>
-</div>
-<div class="head-nav2">
-    <i class="fa-solid fa-bars"></i>
-</div>
-        </div>
-        <div class="round">
-            <div class="inner">
-<center>
-    <h2 class="anta-regular">BMI</h2>
-</center>
-<p> Body Mass Index</Body></p>
-            </div>
-        </div>
-        <div class="inputsection">
-<form action="">
-   <center>
-    <input type="text" placeholder="weight in Kg">
-    <input type="text" placeholder="height in M">
-   </center>
-   <center>
-    <button>Check result:</button>
-   </center>
-</form>
-        </div>
-    </div>
-</body>
-</html>
+
+        <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-BhqN5MVFgF0zBkJI5JQeeLU5TG8KNiG4lCkD/sro+2oX0Q5AxO94pXtTHvtUH9p5TQ+/MptgANP4Q1f+AMTzKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>BMI Calculator</title>
+                <link rel="stylesheet" href="style.css">
+            </head>
+            <body>
+                <div class="launching">
+                    <img src="bmi-logo.jpg" alt="" style="width: 300px;height: 300px;margin:auto;display:block;border-radius:50%;">
+                    <div class="p-launching" style="text-align: center;width: 100%;padding-top:10px;">
+                        <img src="budge.jpeg" alt="bmi logo" class="sh-logo" style="border-radius: 50%;">
+                        <b>Developed by:</b>
+                    <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> STEM club of queen of martyrs high school</p>
+                    </div>
+                </div>
+                <div class="interface">
+                    <div class="nav"> 
+                        <div class="head-nav">
+                            <h1>BMI cal.</h1>
+                            <select name="language" id="languageSelect">
+                                <option value="en">English</option>
+                                <option value="lg">Luganda</option>
+                                <option value="sw">Kiswahili</option>
+                            </select>
+                        </div>
+                        <div class="head-nav2">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="round">
+                        <div class="inner">
+                            <center>
+                                <h2 class="anta-regular">BMI</h2>
+                            </center>
+                            <p>Body Mass Index</p>
+                        </div>
+                    </div>
+                    <div class="inputsection">
+                        <form action="">
+                            <center>
+                                <input type="text" placeholder="weight in Kg" id="weight">
+                                <input type="text" placeholder="height in cm" id="height">
+                            </center>
+                            <center>
+                                <button type="button" onclick="calBmi()" id="result">Check for result</button>
+                                
+                            </center>
+                            <p id="res" style="color: red;"></p>
+                            
+            
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="report">
+                   <marquee behavior="" direction=" ">
+                    <h2>
+                        Body diagnostic report
+                                </h2>
+                   </marquee>
+                    <div id="resultbmi"> 
+            
+                    </div>
+                    <div id="healthStatus">
+            <img src="" alt="">
+            
+                    </div>
+                    <p id="descriptive"></p>
+                    <div class="health-risks">
+                    </div>
+                    <div class="advice">
+                        <b id="solution">How to over recover from <span id="healthSol"></span></b>
+            <li id="adviceone"></li>
+            <li id="advicetwo"></li>
+            <li id="advicethree"></li>
+            <li id="advicefour"></li>
+                    </div>
+                    <div class="recommendation">
+                        <p id="recone"></p>
+                        <p id="rectwo"></p>
+            
+             
+                    </div>
+                    <div class="conclussion">
+                        <p>Thank  for using and trusting &COPY;BMI Cal.</p>
+                    </div>
+                    
+                    <button id="close" onclick="exit()">CLOSE REPORT</button>
+                </div>
+                <script src="script.js"></script>
+            </body>
+            </html>
+            
+            
